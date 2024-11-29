@@ -69,6 +69,8 @@
 	  <None Remove="ViewModels\" />
 	  <None Remove="Views\" />
 	  <None Remove="Resources\Images\tick.jpg" />
+	  <None Remove="Resources\Images\tick.png" />
+	  <None Remove="Resources\Images\tick.webp" />
 	</ItemGroup>
 	<ItemGroup>
 	  <Folder Include="ViewModels\" />
