@@ -4,7 +4,7 @@
              x:Class="Demo.Views.SubscriptionPage"
              Title="SubscriptionPage">
    <ScrollView>
-    <VerticalStackLayout Padding="20" VerticalOptions="CenterAndExpand" WidthRequest="500">
+    <VerticalStackLayout Padding="20" VerticalOptions="CenterAndExpand" >
         <!-- Title -->
         <Label Text="Choose a plan"
                FontSize="40"
@@ -54,10 +54,10 @@
         </VerticalStackLayout>
         
         <!-- "Most Popular" Label Positioned to the Top-Right -->
-        <Frame BackgroundColor="Black" CornerRadius="5" Padding="3" Margin="10,0"
+        <Frame x:Name="mostPopular" IsVisible="False"  BackgroundColor="Black" CornerRadius="5" Padding="3" Margin="10,0"
                AbsoluteLayout.LayoutBounds="1,0,AutoSize,AutoSize"
                AbsoluteLayout.LayoutFlags="PositionProportional">
-            <Label x:Name="mostPopular" IsVisible="False" Text="Most Popular" TextColor="White" FontSize="12" />
+            <Label Text="Most Popular" TextColor="White" FontSize="12" />
         </Frame>
 
         <!-- Checkmark icon for 12 Months plan positioned to the Bottom-Right -->
