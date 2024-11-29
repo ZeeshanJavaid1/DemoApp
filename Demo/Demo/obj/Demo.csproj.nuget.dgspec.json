@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/Devbasis/Projects/Demo/Demo/Demo.csproj": {}
+    "/Users/Devbasis/GitHub/DemoApp/Demo/Demo/Demo.csproj": {}
   },
   "projects": {
-    "/Users/Devbasis/Projects/Demo/Demo/Demo.csproj": {
+    "/Users/Devbasis/GitHub/DemoApp/Demo/Demo/Demo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/Devbasis/Projects/Demo/Demo/Demo.csproj",
+        "projectUniqueName": "/Users/Devbasis/GitHub/DemoApp/Demo/Demo/Demo.csproj",
         "projectName": "Demo",
-        "projectPath": "/Users/Devbasis/Projects/Demo/Demo/Demo.csproj",
+        "projectPath": "/Users/Devbasis/GitHub/DemoApp/Demo/Demo/Demo.csproj",
         "packagesPath": "/Users/Devbasis/.nuget/packages/",
-        "outputPath": "/Users/Devbasis/Projects/Demo/Demo/obj/",
+        "outputPath": "/Users/Devbasis/GitHub/DemoApp/Demo/Demo/obj/",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "configFilePaths": [
