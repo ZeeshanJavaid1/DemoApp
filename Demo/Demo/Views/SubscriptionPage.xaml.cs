@@ -31,18 +31,21 @@
                     TickOneMonth.IsVisible = true;
                     mostPopular.IsVisible = false;
                     premiumBadge.IsVisible = false;
+                    TwelveMonthsPlan.HeightRequest = 100;
                     break;
 
                 case "TwelveMonthsPlan":
                     TickTwelveMonths.IsVisible = true;
                     mostPopular.IsVisible = true;
                     premiumBadge.IsVisible = true;
+                    TwelveMonthsPlan.HeightRequest = 120;
                     break;
 
                 case "SixMonthsPlan":
                     TickSixMonths.IsVisible = true;
                     mostPopular.IsVisible = false;
                     premiumBadge.IsVisible = false;
+                    TwelveMonthsPlan.HeightRequest = 100;
                     break;
             }
         }

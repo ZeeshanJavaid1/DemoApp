@@ -2088,5 +2088,5 @@
 /Users/Devbasis/GitHub/DemoApp/Demo/Demo/obj/Debug/net8.0-android/stamp/_GenerateJavaStubs.stamp
 /Users/Devbasis/GitHub/DemoApp/Demo/Demo/obj/Debug/net8.0-android/stamp/_GeneratePackageManagerJava.stamp
 /Users/Devbasis/GitHub/DemoApp/Demo/Demo/obj/Debug/net8.0-android/stamp/_ResolveLibraryProjectImports.stamp
-/Users/Devbasis/GitHub/DemoApp/Demo/Demo/obj/Debug/net8.0-android/resizetizer/r/drawable/tick.webp
 /Users/Devbasis/GitHub/DemoApp/Demo/Demo/obj/Debug/net8.0-android/resizetizer/r/drawable/premiumbadge.webp
+/Users/Devbasis/GitHub/DemoApp/Demo/Demo/obj/Debug/net8.0-android/resizetizer/r/drawable/tick.png
