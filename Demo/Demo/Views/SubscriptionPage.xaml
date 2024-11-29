@@ -103,7 +103,9 @@
                 </Frame>
             </VerticalStackLayout>
 
+
             <!-- Footer -->
+            <VerticalStackLayout VerticalOptions="EndAndExpand">
             <Label Text="Cancel in the Play Store Any Time"
                FontSize="12"
                HorizontalOptions="Center"
@@ -121,6 +123,7 @@
                HorizontalOptions="Center"
                Margin="0,20,0,0"
                HorizontalTextAlignment="Center" />
+                </VerticalStackLayout>
         </VerticalStackLayout>
     </ScrollView>
 
