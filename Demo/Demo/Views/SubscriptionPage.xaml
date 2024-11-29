@@ -3,94 +3,110 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Demo.Views.SubscriptionPage"
              Title="SubscriptionPage">
-    <ScrollView>
-        <VerticalStackLayout Padding="20">
-            <!-- Title -->
-            <Label Text="Choose a plan"
-                   FontSize="24"
-                   HorizontalOptions="Center"
-                   FontAttributes="Bold"
-                   Margin="0,10" />
+   <ScrollView>
+    <VerticalStackLayout Padding="20" VerticalOptions="CenterAndExpand" WidthRequest="500">
+        <!-- Title -->
+        <Label Text="Choose a plan"
+               FontSize="40"
+               HorizontalOptions="Center"
+               FontAttributes="Bold"
+               Margin="0,10" />
 
-            <!-- Plan Options -->
-            <VerticalStackLayout x:Name="PlanContainer" Spacing="15">
-                <!-- 1 Month Plan -->
-                <Frame x:Name="OneMonthPlan"
-                       BackgroundColor="#F5F5F5"
-                       BorderColor="Transparent"
-                       CornerRadius="10"
-                       Padding="10">
-                    <Frame.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="OnPlanTapped" CommandParameter="OneMonthPlan" />
-                    </Frame.GestureRecognizers>
-                    <Grid ColumnDefinitions="*,Auto">
-                        <VerticalStackLayout>
-                            <Label Text="1 Month" FontSize="18" FontAttributes="Bold" />
-                            <Label Text="$14.99 / mo" FontSize="14" TextColor="Gray" />
-                        </VerticalStackLayout>
-                    </Grid>
-                </Frame>
+        <!-- Plan Options -->
+        <VerticalStackLayout x:Name="PlanContainer" Spacing="15">
+            <!-- 1 Month Plan -->
+            <Frame x:Name="OneMonthPlan"
+                   BackgroundColor="#F5F5F5"
+                   BorderColor="Transparent"
+                   CornerRadius="10"
+                   Padding="10">
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnPlanTapped" CommandParameter="OneMonthPlan" />
+                </Frame.GestureRecognizers>
+                <Grid ColumnDefinitions="*,Auto">
+                    <VerticalStackLayout>
+                        <Label Text="1 Month" FontSize="18" FontAttributes="Bold" />
+                        <Label Text="$14.99 / mo" FontSize="14" TextColor="Gray" />
+                        <!-- Checkmark icon for 1 Month plan -->
+                        <Image x:Name="TickOneMonth" Source="tick.jpg" IsVisible="False" WidthRequest="40" HeightRequest="40" HorizontalOptions="End" />
+                    </VerticalStackLayout>
+                </Grid>
+            </Frame>
 
-                <!-- 12 Months Plan -->
-                <Frame x:Name="TwelveMonthsPlan"
-                       BackgroundColor="White"
-                       BorderColor="Transparent"
-                       CornerRadius="10"
-                       Padding="10">
-                    <Frame.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="OnPlanTapped" CommandParameter="TwelveMonthsPlan" />
-                    </Frame.GestureRecognizers>
-                    <Grid ColumnDefinitions="*,Auto">
-                        <VerticalStackLayout>
-                            <HorizontalStackLayout>
-                                <Label Text="12 Months" FontSize="18" FontAttributes="Bold" />
-                                <Frame BackgroundColor="Black" CornerRadius="5" Padding="3" Margin="10,0">
-                                    <Label Text="Most Popular" TextColor="White" FontSize="12" />
-                                </Frame>
-                            </HorizontalStackLayout>
-                            <Label Text="$179.88 $89.99" FontSize="14" TextColor="Gray" TextDecorations="Strikethrough" />
-                            <Label Text="$7.50 / mo" FontSize="14" TextColor="Gray" />
-                        </VerticalStackLayout>
-                    </Grid>
-                </Frame>
-
-                <!-- 6 Months Plan -->
-                <Frame x:Name="SixMonthsPlan"
-                       BackgroundColor="#F5F5F5"
-                       BorderColor="Transparent"
-                       CornerRadius="10"
-                       Padding="10">
-                    <Frame.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="OnPlanTapped" CommandParameter="SixMonthsPlan" />
-                    </Frame.GestureRecognizers>
-                    <Grid ColumnDefinitions="*,Auto">
-                        <VerticalStackLayout>
-                            <Label Text="6 Months" FontSize="18" FontAttributes="Bold" />
-                            <Label Text="$59.99" FontSize="14" TextColor="Gray" />
-                            <Label Text="$10.00 / mo" FontSize="14" TextColor="Gray" />
-                        </VerticalStackLayout>
-                    </Grid>
-                </Frame>
-            </VerticalStackLayout>
-
-            <!-- Footer -->
-            <Label Text="Cancel in the Play Store Any Time"
-                   FontSize="12"
-                   HorizontalOptions="Center"
-                   TextColor="Gray"
-                   Margin="0,20" />
-            <Button Text="Subscribe"
-                    BackgroundColor="Black"
-                    TextColor="White"
-                    CornerRadius="25"
-                    HeightRequest="50"
-                    HorizontalOptions="Fill" />
-            <Label Text="Your subscription will automatically renew unless cancelled at least 24 hours prior to the end of the subscription period."
-                   FontSize="12"
-                   TextColor="Gray"
-                   HorizontalOptions="Center"
-                   Margin="0,20,0,0"
-                   HorizontalTextAlignment="Center" />
+            <!-- 12 Months Plan -->
+ <!-- 12 Months Plan -->
+<Frame x:Name="TwelveMonthsPlan"
+       BackgroundColor="White"
+       BorderColor="Transparent"
+       CornerRadius="10"
+       Padding="10">
+    <Frame.GestureRecognizers>
+        <TapGestureRecognizer Tapped="OnPlanTapped" CommandParameter="TwelveMonthsPlan" />
+    </Frame.GestureRecognizers>
+    <AbsoluteLayout>
+        <!-- VerticalStackLayout for plan details -->
+        <VerticalStackLayout>
+            <HorizontalStackLayout>
+                <Label Text="12 Months" FontSize="18" FontAttributes="Bold" />
+            </HorizontalStackLayout>
+            <Label Text="$179.88 $89.99" FontSize="14" TextColor="Gray" TextDecorations="Strikethrough" />
+            <Label Text="$7.50 / mo" FontSize="14" TextColor="Gray" />
         </VerticalStackLayout>
-    </ScrollView>
+        
+        <!-- "Most Popular" Label Positioned to the Top-Right -->
+        <Frame BackgroundColor="Black" CornerRadius="5" Padding="3" Margin="10,0"
+               AbsoluteLayout.LayoutBounds="1,0,AutoSize,AutoSize"
+               AbsoluteLayout.LayoutFlags="PositionProportional">
+            <Label x:Name="mostPopular" IsVisible="False" Text="Most Popular" TextColor="White" FontSize="12" />
+        </Frame>
+
+        <!-- Checkmark icon for 12 Months plan positioned to the Bottom-Right -->
+        <Image x:Name="TickTwelveMonths" Source="tick.jpg" IsVisible="False" WidthRequest="40" HeightRequest="40"
+               AbsoluteLayout.LayoutBounds="1,1,AutoSize,AutoSize"
+               AbsoluteLayout.LayoutFlags="PositionProportional" />
+    </AbsoluteLayout>
+</Frame>
+
+            <!-- 6 Months Plan -->
+            <Frame x:Name="SixMonthsPlan"
+                   BackgroundColor="#F5F5F5"
+                   BorderColor="Transparent"
+                   CornerRadius="10"
+                   Padding="10">
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnPlanTapped" CommandParameter="SixMonthsPlan" />
+                </Frame.GestureRecognizers>
+                <Grid ColumnDefinitions="*,Auto">
+                    <VerticalStackLayout>
+                        <Label Text="6 Months" FontSize="18" FontAttributes="Bold" />
+                        <Label Text="$59.99" FontSize="14" TextColor="Gray" />
+                        <Label Text="$10.00 / mo" FontSize="14" TextColor="Gray" />
+                        <!-- Checkmark icon for 6 Months plan -->
+                        <Image x:Name="TickSixMonths" Source="tick.jpg" IsVisible="False" WidthRequest="40" HeightRequest="40" HorizontalOptions="End" />
+                    </VerticalStackLayout>
+                </Grid>
+            </Frame>
+        </VerticalStackLayout>
+
+        <!-- Footer -->
+        <Label Text="Cancel in the Play Store Any Time"
+               FontSize="12"
+               HorizontalOptions="Center"
+               TextColor="Gray"
+               Margin="0,20" />
+        <Button Text="Subscribe"
+                BackgroundColor="Black"
+                TextColor="White"
+                CornerRadius="25"
+                HeightRequest="50"
+                HorizontalOptions="Fill" />
+        <Label Text="Your subscription will automatically renew unless cancelled at least 40 hours prior to the end of the subscription period."
+               FontSize="12"
+               TextColor="Gray"
+               HorizontalOptions="Center"
+               Margin="0,20,0,0"
+               HorizontalTextAlignment="Center" />
+    </VerticalStackLayout>
+</ScrollView>
+
 </ContentPage>
