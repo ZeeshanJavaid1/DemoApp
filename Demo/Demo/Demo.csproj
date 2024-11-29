@@ -71,6 +71,7 @@
 	  <None Remove="Resources\Images\tick.jpg" />
 	  <None Remove="Resources\Images\tick.png" />
 	  <None Remove="Resources\Images\tick.webp" />
+	  <None Remove="Resources\Images\premiumbadge.webp" />
 	</ItemGroup>
 	<ItemGroup>
 	  <Folder Include="ViewModels\" />

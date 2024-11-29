@@ -30,16 +30,19 @@
                 case "OneMonthPlan":
                     TickOneMonth.IsVisible = true;
                     mostPopular.IsVisible = false;
+                    premiumBadge.IsVisible = false;
                     break;
 
                 case "TwelveMonthsPlan":
                     TickTwelveMonths.IsVisible = true;
                     mostPopular.IsVisible = true;
+                    premiumBadge.IsVisible = true;
                     break;
 
                 case "SixMonthsPlan":
                     TickSixMonths.IsVisible = true;
                     mostPopular.IsVisible = false;
+                    premiumBadge.IsVisible = true;
                     break;
             }
         }

@@ -48,7 +48,7 @@
                     </Frame.GestureRecognizers>
                     <AbsoluteLayout>
                         <!-- VerticalStackLayout for plan details -->
-                        <VerticalStackLayout Padding="10">
+                        <VerticalStackLayout Padding="10" Margin="0,40,0,0">
                             <HorizontalStackLayout>
                                 <Label Text="12 Months" FontSize="18" FontAttributes="Bold" />
                             </HorizontalStackLayout>
@@ -58,12 +58,14 @@
                         </VerticalStackLayout>
 
                         <!-- "Most Popular" Label Positioned to the Top-Right -->
-                        <Frame x:Name="mostPopular" IsVisible="False"  BackgroundColor="Black" HeightRequest="40" WidthRequest="150" CornerRadius="10" Padding="3" Margin="10,0,0,5"
-               AbsoluteLayout.LayoutBounds="1,0,AutoSize,AutoSize"
-               AbsoluteLayout.LayoutFlags="PositionProportional">
+                        <Frame x:Name="mostPopular" IsVisible="False"  BackgroundColor="Black" HeightRequest="40" WidthRequest="150" CornerRadius="10" Padding="3" Margin="0,0,0,0"
+                               AbsoluteLayout.LayoutBounds="0,0,AutoSize,AutoSize"
+                               AbsoluteLayout.LayoutFlags="PositionProportional">
                             <Label Text="Most Popular" TextColor="White" FontSize="16" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
                         </Frame>
-
+                        <Image x:Name="premiumBadge" IsVisible="false" Source="premiumbadge.webp" WidthRequest="40" HeightRequest="40"
+                               AbsoluteLayout.LayoutBounds="1,0,AutoSize,AutoSize"
+                               AbsoluteLayout.LayoutFlags="PositionProportional" />
                         <!-- Checkmark icon for 12 Months plan positioned to the Bottom-Right -->
                         <Image x:Name="TickTwelveMonths" Source="tick.webp" IsVisible="False" WidthRequest="40" HeightRequest="40"
                AbsoluteLayout.LayoutBounds="1,1,AutoSize,AutoSize"
