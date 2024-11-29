@@ -87,6 +87,7 @@
 
             <!-- Continue Button -->
             <Button Text="Continue"
+                    Clicked="OnContinueClicked"
                     BackgroundColor="Black"
                     TextColor="White"
                     CornerRadius="10"

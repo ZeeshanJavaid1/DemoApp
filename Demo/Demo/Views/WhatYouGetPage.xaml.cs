@@ -8,7 +8,7 @@ public partial class WhatYouGetPage : ContentPage
 	}
     private void OnContinueClicked(object sender, EventArgs e)
     {
-        // Navigate to the next page or perform an action
+        Navigation.PushModalAsync(new StepsPage());
     }
 
     private void OnRestoreSubscriptionClicked(object sender, EventArgs e)

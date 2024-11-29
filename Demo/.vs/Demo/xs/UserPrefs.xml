@@ -1,7 +1,44 @@
 ﻿<Properties StartupConfiguration="{E71DA67A-87EF-404C-923E-042C119F80DD}|Default">
-  <MonoDevelop.Ide.ItemProperties.Demo PreferredExecutionTarget="MyAppleMacCatalystID" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Demo PreferredExecutionTarget="Android.Pixel_7_API_34" />
+  <MonoDevelop.MonoDroid LastDeploySdkVersion="34.0.145" />
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.Pixel_7_API_34" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <Debugger.DebugSourceFolders>
     <String>/Users/Devbasis/Library/Caches/VisualStudio/17.0/Symbols/raw.githubusercontent.com/xamarin/xamarin-macios/16d8cebc11e31e29f9c299a9c7d596de6985865c</String>
   </Debugger.DebugSourceFolders>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Demo/Views/WhatYouGetPage.xaml.cs">
+    <Files>
+      <File FileName="Demo/MainPage.xaml.cs" Line="16" Column="1" />
+      <File FileName="Demo/MainPage.xaml" Line="52" Column="21" />
+      <File FileName="Demo/ViewModels/MainViewModel.cs" Line="8" Column="1" />
+      <File FileName="Demo/AppShell.xaml" Line="10" Column="18" />
+      <File FileName="Demo/AppShell.xaml.cs" Line="10" Column="1" />
+      <File FileName="Demo/App.xaml.cs" Line="15" Column="1" />
+      <File FileName="Demo/Views/WhatYouGetPage.xaml" Line="90" Column="47" />
+      <File FileName="Demo/Views/WhatYouGetPage.xaml.cs" Line="10" Column="1" />
+      <File FileName="Demo/Views/StepsPage.xaml" Line="91" Column="52" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Demo" expanded="True">
+            <Node name="Demo">
+              <Node name="Views">
+                <Node name="StepsPage.xaml" expanded="True" />
+                <Node name="WhatYouGetPage.xaml">
+                  <Node name="WhatYouGetPage.xaml.cs" selected="True" />
+                </Node>
+              </Node>
+              <Node name="App.xaml" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
   <MultiItemStartupConfigurations />
 </Properties>
