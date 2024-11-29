@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Demo.Views.StepsPage">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="15">
+
+            <!-- Header Section -->
+            <Label Text="Welcome"
+                   FontSize="36"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center" />
+            <Label Text="A few steps to get you started"
+                   FontSize="18"
+                   TextColor="Gray"
+                   HorizontalOptions="Center" />
+
+            <!-- Steps Section -->
+            <VerticalStackLayout Spacing="0" HorizontalOptions="Center">
+
+                <!-- Step 1 -->
+                <Grid ColumnDefinitions="40, *" RowDefinitions="Auto, 50">
+                    <Frame Grid.Row="0"
+                           BackgroundColor="{Binding Step1Color}" 
+                           WidthRequest="25" 
+                           HeightRequest="25" 
+                           CornerRadius="12" 
+                           VerticalOptions="Center" 
+                           HorizontalOptions="Center">
+                        <Label Text="1" 
+                               TextColor="White" 
+                               FontAttributes="Bold"
+                               HorizontalOptions="Center" 
+                               VerticalOptions="Center" />
+                    </Frame>
+                    <VerticalStackLayout Grid.Column="1" Grid.Row="0" Padding="10,0,0,0" Spacing="5">
+                        <Label Text="Basics" FontSize="20" FontAttributes="Bold" />
+                        <Label Text="MacroFactor's calorie targets are based on estimates of your daily energy expenditure. We will fine-tune those estimates over time. For now, we need some basic information to calculate your starting point." 
+                               FontSize="14" 
+                               TextColor="Gray" />
+                    </VerticalStackLayout>
+                    <!-- Line -->
+                    <BoxView Grid.Row="1"
+                             BackgroundColor="{Binding Step1LineColor}" 
+                             WidthRequest="2"
+                             HeightRequest="135"
+                             VerticalOptions="Center" 
+                             HorizontalOptions="Center"
+                    />
+                </Grid>
+
+                <!-- Step 2 -->
+                <Grid ColumnDefinitions="40, *" RowDefinitions="Auto, 50">
+                    <Frame Grid.Row="0"
+                           BackgroundColor="{Binding Step2Color}" 
+                      WidthRequest="25" 
+                           HeightRequest="25" 
+                           CornerRadius="12" 
+                           VerticalOptions="Center"
+                           HorizontalOptions="Center">
+                        <Label Text="1" 
+                               TextColor="White" 
+                               FontAttributes="Bold"
+                               HorizontalOptions="Center" 
+                               VerticalOptions="Center" />
+                    </Frame>
+                    <VerticalStackLayout Grid.Column="1" Grid.Row="0" Padding="10,0,0,0" Spacing="5">
+                        <Label Text="Notice" FontSize="20" FontAttributes="Bold" />
+                        <Label Text="This step provides an overview of the goals and processes involved." 
+                               FontSize="14" 
+                               TextColor="Gray" />
+                    </VerticalStackLayout>
+                    <!-- Line -->
+                <BoxView Grid.Row="1"
+                             BackgroundColor="{Binding Step2LineColor}" 
+                             WidthRequest="2"
+                             HeightRequest="100"
+                             VerticalOptions="Center" 
+                             HorizontalOptions="Center"
+                />
+                </Grid>
+
+                <!-- Step 3 -->
+                <Grid ColumnDefinitions="40, *" RowDefinitions="Auto, 50">
+                    <Frame Grid.Row="0"
+                           BackgroundColor="{Binding Step3Color}" 
+              WidthRequest="25" 
+                           HeightRequest="25" 
+                           CornerRadius="12" 
+                           VerticalOptions="Center"
+                           HorizontalOptions="Center">
+                        <Label Text="3" 
+                               TextColor="White" 
+                               FontAttributes="Bold"
+                               HorizontalOptions="Center" 
+                               VerticalOptions="Center" />
+                    </Frame>
+                    <VerticalStackLayout Grid.Column="1" Grid.Row="0" Padding="10,0,0,0" Spacing="5">
+                        <Label Text="Goal" FontSize="20" FontAttributes="Bold" />
+                        <Label Text="Define your primary objectives to personalize your journey." 
+                               FontSize="14" 
+                               TextColor="Gray" />
+                    </VerticalStackLayout>
+                    <!-- Line -->
+                 <BoxView Grid.Row="1"
+                             BackgroundColor="{Binding Step3LineColor}" 
+                             WidthRequest="2"
+                             HeightRequest="80"
+                             VerticalOptions="Center" 
+                             HorizontalOptions="Center"
+                           />
+                </Grid>
+
+                <!-- Step 4 -->
+                <Grid ColumnDefinitions="40, *" RowDefinitions="Auto">
+                    <Frame Grid.Row="0"
+                           BackgroundColor="{Binding Step4Color}" 
+                           WidthRequest="25" 
+                           HeightRequest="25" 
+                           CornerRadius="12" 
+                           VerticalOptions="Center"
+                           HorizontalOptions="Center">
+                        <Label Text="4" 
+                               TextColor="White" 
+                               FontAttributes="Bold"
+                               HorizontalOptions="Center" 
+                               VerticalOptions="Center" />
+                    </Frame>
+                    <VerticalStackLayout Grid.Column="1" Grid.Row="0" Padding="10,0,0,0" Spacing="5">
+                        <Label Text="Program" FontSize="20" FontAttributes="Bold" />
+                        <Label Text="Get started with your customized plan and next steps." 
+                               FontSize="14" 
+                               TextColor="Gray" />
+                    </VerticalStackLayout>
+                </Grid>
+
+            </VerticalStackLayout>
+
+            <!-- Navigation Button -->
+            <Button Text="Go to Next Step"
+                    Command="{Binding NextStepCommand}"
+                    BackgroundColor="Black"
+                    TextColor="White"
+                    FontSize="18"
+                    HeightRequest="50"
+                    CornerRadius="10"
+                    HorizontalOptions="Fill" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

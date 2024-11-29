@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Demo.MainPage">
+
+    <ScrollView>
+        <Grid ColumnDefinitions="*,*,*,*"
+              RowDefinitions="*,*,*,*"
+              Padding="30,0">
+            
+            <!-- Title Section -->
+            <VerticalStackLayout Grid.Row="0" Grid.ColumnSpan="4">
+                <Label
+                    Text="macrofactor"
+                    FontSize="40"
+                    FontAttributes="Bold"
+                    HorizontalOptions="StartAndExpand"
+                    SemanticProperties.HeadingLevel="Level1" />
+
+                <Label
+                    Text="confidently control your nutrition"
+                    FontSize="15"
+                    FontAttributes="Bold"
+                    HorizontalOptions="Start"/>
+            </VerticalStackLayout>
+
+            <!-- Email Verification Section -->
+            <VerticalStackLayout Grid.Row="1" Grid.ColumnSpan="4">
+                <Label
+                    Text="Verify your Email"
+                    FontSize="15"
+                    FontAttributes="Bold"
+                    HorizontalOptions="Start"
+                    SemanticProperties.HeadingLevel="Level1" />
+
+                <Label
+                    Text="Check your inbox and click the link we sent you to activate your account before you continue. We are excited to have you onboard"
+                    TextColor="gray"
+                    FontSize="15"
+                    HorizontalOptions="StartAndExpand"
+                    LineBreakMode="WordWrap" />
+            </VerticalStackLayout>
+
+            <!-- Button Section -->
+            <VerticalStackLayout Grid.Row="2" Grid.ColumnSpan="4">
+                <Button
+                    x:Name="CounterBtn"
+                    Text="Done"
+                    SemanticProperties.Hint="Counts the number of times you click"
+                    HeightRequest="50"
+                    WidthRequest="300"
+                    Clicked="OnCounterClicked"
+                    HorizontalOptions="CenterAndExpand"
+                    BackgroundColor="Black"
+                    TextColor="white"
+                    FontSize="16"/>
+                
+                <Label
+                    Text="Resend Email"
+                    FontSize="15"
+                    FontAttributes="Bold"
+                    HorizontalOptions="CenterAndExpand"
+                    SemanticProperties.HeadingLevel="Level1" />
+            </VerticalStackLayout>
+
+        </Grid>
+    </ScrollView>
+
+</ContentPage>

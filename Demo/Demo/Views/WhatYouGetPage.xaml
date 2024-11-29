@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Demo.Views.WhatYouGetPage"
+             Title="WhatYouGetPage">
+<ScrollView>
+        <Grid Padding="20" RowDefinitions="*,*,*,*,auto,*">
+            <!-- Logo and Title -->
+
+            <VerticalStackLayout Grid.Row="0">
+
+            <Label Text="What you get"
+                   FontSize="28"
+                   FontAttributes="Bold"
+                   HorizontalOptions="StartAndExpand" />
+
+            <!-- Description -->
+            <Label Text="The best-in-class diet coaching algorithm that adapts to your unique metabolism and:"
+                   FontSize="16"
+                   HorizontalTextAlignment="Start"
+                   HorizontalOptions="StartAndExpand"/>
+                </VerticalStackLayout>
+            <VerticalStackLayout Grid.Row="1">
+            <!-- Features List -->
+            <StackLayout Padding="10" Spacing="10">
+                <!-- Item 1 -->
+                <StackLayout Orientation="Horizontal" Spacing="10">
+                    <BoxView WidthRequest="10" HeightRequest="10" CornerRadius="5" BackgroundColor="Black" />
+                    <Label Text="Fastest food logging workflows on the market" FontSize="14" VerticalOptions="Center" />
+                </StackLayout>
+
+                <!-- Item 2 -->
+                <StackLayout Orientation="Horizontal" Spacing="10">
+                    <BoxView WidthRequest="10" HeightRequest="10" CornerRadius="5" BackgroundColor="Black" />
+                    <Label Text="Weekly check-ins that adjust your macros" FontSize="14" VerticalOptions="Center" />
+                </StackLayout>
+
+                <!-- Item 3 -->
+                <StackLayout Orientation="Horizontal" Spacing="10">
+                    <BoxView WidthRequest="10" HeightRequest="10" CornerRadius="5" BackgroundColor="Black" />
+                    <Label Text="Accurate energy expenditure estimates" FontSize="14" VerticalOptions="Center" />
+                </StackLayout>
+
+                <!-- Item 4 -->
+                <StackLayout Orientation="Horizontal" Spacing="10">
+                    <BoxView WidthRequest="10" HeightRequest="10" CornerRadius="5" BackgroundColor="Black" />
+                    <Label Text="Advanced weight trending" FontSize="14" VerticalOptions="Center" />
+                </StackLayout>
+
+                <!-- Item 5 -->
+                <StackLayout Orientation="Horizontal" Spacing="10">
+                    <BoxView WidthRequest="10" HeightRequest="10" CornerRadius="5" BackgroundColor="Black" />
+                    <Label Text="Research-grade common foods database" FontSize="14" VerticalOptions="Center" />
+                </StackLayout>
+
+                <!-- Item 6 -->
+                <StackLayout Orientation="Horizontal" Spacing="10">
+                    <BoxView WidthRequest="10" HeightRequest="10" CornerRadius="5" BackgroundColor="Black" />
+                    <Label Text="Macro and micronutrient reporting" FontSize="14" VerticalOptions="Center" />
+                </StackLayout>
+
+                <!-- Item 7 -->
+                <StackLayout Orientation="Horizontal" Spacing="10">
+                    <BoxView WidthRequest="10" HeightRequest="10" CornerRadius="5" BackgroundColor="Black" />
+                    <Label Text="Evidence-based nutrition recommendations" FontSize="14" VerticalOptions="Center" />
+                </StackLayout>
+
+                <!-- Item 8 -->
+                <StackLayout Orientation="Horizontal" Spacing="10">
+                    <BoxView WidthRequest="10" HeightRequest="10" CornerRadius="5" BackgroundColor="Black" />
+                    <Label Text="Premium, privacy-first experience" FontSize="14" VerticalOptions="Center" />
+                </StackLayout>
+            </StackLayout>
+                </VerticalStackLayout>
+            <VerticalStackLayout Grid.Row="4">
+            <BoxView HorizontalOptions="FillAndExpand" BackgroundColor="LightGray" HeightRequest="1"/>
+                </VerticalStackLayout>
+
+            <!-- Footer -->
+            <VerticalStackLayout Grid.Row="5" Spacing="20">
+            <Label Text="lose weight • gain muscle • maintain results"
+                   FontSize="14"
+                   TextColor="Black"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   Margin="0,20,0,0"/>
+
+            <!-- Continue Button -->
+            <Button Text="Continue"
+                    BackgroundColor="Black"
+                    TextColor="White"
+                    CornerRadius="10"
+                    HeightRequest="50"
+                    />
+
+            <!-- Restore Subscription -->
+            <Button Text="Restore Subscription"
+                    BackgroundColor="Transparent"
+                    TextColor="Black"
+                    FontAttributes="Italic"
+                    BorderColor="Black"
+                    BorderWidth="1"
+                    CornerRadius="10"
+                    HeightRequest="50" />
+                </VerticalStackLayout>
+        </Grid>
+    </ScrollView>
+</ContentPage>

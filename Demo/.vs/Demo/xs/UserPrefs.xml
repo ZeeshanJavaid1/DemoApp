@@ -1,0 +1,7 @@
+﻿<Properties StartupConfiguration="{E71DA67A-87EF-404C-923E-042C119F80DD}|Default">
+  <MonoDevelop.Ide.ItemProperties.Demo PreferredExecutionTarget="MyAppleMacCatalystID" />
+  <Debugger.DebugSourceFolders>
+    <String>/Users/Devbasis/Library/Caches/VisualStudio/17.0/Symbols/raw.githubusercontent.com/xamarin/xamarin-macios/16d8cebc11e31e29f9c299a9c7d596de6985865c</String>
+  </Debugger.DebugSourceFolders>
+  <MultiItemStartupConfigurations />
+</Properties>
