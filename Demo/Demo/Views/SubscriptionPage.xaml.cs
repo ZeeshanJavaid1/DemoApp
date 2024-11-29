@@ -42,7 +42,7 @@
                 case "SixMonthsPlan":
                     TickSixMonths.IsVisible = true;
                     mostPopular.IsVisible = false;
-                    premiumBadge.IsVisible = true;
+                    premiumBadge.IsVisible = false;
                     break;
             }
         }
